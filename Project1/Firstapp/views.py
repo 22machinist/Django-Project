@@ -27,4 +27,4 @@ def Mi (request):
 
 #Now we will add the function that will greet everyone who enters his name 
 def greet(request , name):
-    return HttpResponse(f"Hello , {name}!")
+    return render (request , "Firstapp/greet.html")
