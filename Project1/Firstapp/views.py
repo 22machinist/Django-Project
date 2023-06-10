@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request) :
-    return HttpResponse("Hello, World") 
+    return render(request ,"Firstapp/index.html" ) 
 
 #Adding a new function named by Ashutosh
 def Ashutosh(request) :
