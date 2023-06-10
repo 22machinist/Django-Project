@@ -27,4 +27,6 @@ def Mi (request):
 
 #Now we will add the function that will greet everyone who enters his name 
 def greet(request , name):
-    return render (request , "Firstapp/greet.html")
+    return render (request , "Firstapp/greet.html" , {
+        "name": name.capitalize()
+    })
