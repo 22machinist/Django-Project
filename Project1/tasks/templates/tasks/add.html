@@ -4,7 +4,7 @@
 <h1>
     Add 
 </h1>
-<form>
+<form action="{% url 'tasks:index' %}" method="post">
     <input type="text" name="task">
     <input type="submit">
 </form>
