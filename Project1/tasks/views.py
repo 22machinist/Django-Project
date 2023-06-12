@@ -6,6 +6,7 @@ tasks = ["Foo" , "Harry" , "George"]         #Defining the universal variable
 #Adding a class to contain form
 class NewTaskForm(forms.Form):
     task = forms.CharField(label="New Task : ")
+    priority = forms.IntegerField(label="Priority")
 
 def index(request):
     return render(request , "tasks/index.html" , {
